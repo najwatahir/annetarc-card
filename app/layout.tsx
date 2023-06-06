@@ -2,8 +2,8 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata = {
-  title: '✰ Najwa ✰',
-  description: 'Najwa Tahir personal website',
+  title: '✰ Najwa Tahir ✰',
+  description: 'Najwa Tahir Portfolio Website',
 }
 
 export default function RootLayout({

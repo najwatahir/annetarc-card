@@ -140,6 +140,8 @@ h3 {
   background: var(--bg);
   transition: 0.2s;
   cursor: default;
+  display: block;
+  width: 120px;
 }
 
 .ability-box:hover {

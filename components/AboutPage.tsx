@@ -4,9 +4,9 @@ import Image from "next/image"
 const AboutPage = () => {
     return (
         <section id="about" className=" mt-0 pb-6 bg-[#EDEDED]">
-            <div className="md:pt-5 md:pb-5 p-24">
+            <div className="md:pt-5 md:pb-5 p-10 lg:p-2">
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-                    <div className="md:w-1/2 ">
+                    <div className="md:w-1/2 mr-auto ml-auto justify-between p-6">
                         <h1 className="text-center text-2xl md:text-4xl font-bold mb-6 md:text-center text-[#1E1E1E] font-['Concert One']">
                             ABOUT ME
                         </h1>
@@ -25,9 +25,9 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <div className="text-center md:w-1/2 md:text-center">
-                        <h1 className="text-2xl md:text-4xl font-bold mb-6">SKILLS & ABILITIES</h1>
+                        <h1 className="text-2xl md:text-4xl font-bold mb-6 text-center mx-auto">SKILLS & ABILITIES</h1>
                         <hr className="w-12 h-1 mx-auto my-4 bg-[#B19DC5] border-0 rounded"></hr>
-                        <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start items-center md:pl-8">
+                        <div className="flex flex-wrap flex-row z-10  items-center justify-center">
                             <div className="skill-box">
                                 <p>HTML</p>
                                 <img src="/images/html.png" alt="" />
@@ -52,6 +52,8 @@ const AboutPage = () => {
                                 <p>MySQL</p>
                                 <img src="/images/MySQL.png" alt="" />
                             </div>
+                        </div>
+                        <div className="flex flex-wrap flex-row z-10 justify-center">
                             <div className="ability-box">
                                 <p>Problem Solving</p>
                             </div>
@@ -62,6 +64,7 @@ const AboutPage = () => {
                                 <p>Team Working</p>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
