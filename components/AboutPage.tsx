@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "next/image"
 
 const AboutPage = () => {
     return (
@@ -12,7 +11,7 @@ const AboutPage = () => {
                         </h1>
                         <hr className="w-12 h-1 mx-auto my-4 bg-[#B19DC5] border-0 rounded"></hr>
                         <p className="text-[#1E1E1E] mb:text-lg text-base">
-                            My name is <span>Najwa Tahir</span>, you can call me <span>Najwa</span> for short. I am a 2nd year Vocational High School student majoring in Software Engineering at SMKN 1 Denpasar.
+                            My name is <span>Najwa Tahir</span>, you can call me <span>Najwa</span> for short. I am a 3rd year Vocational High School student majoring in Software Engineering at SMKN 1 Denpasar.
                         </p>
                         <br />
                         <p>
@@ -37,12 +36,12 @@ const AboutPage = () => {
                                 <img src="/images/css.png" alt="" />
                             </div>
                             <div className="skill-box">
-                                <p>JavaScript</p>
-                                <img src="/images/js.png" alt="" />
-                            </div>
-                            <div className="skill-box">
                                 <p>Tailwind CSS</p>
                                 <img src="/images/tailwind-css.png" alt="" />
+                            </div>
+                            <div className="skill-box">
+                                <p>JavaScript</p>
+                                <img src="/images/js.png" alt="" />
                             </div>
                             <div className="skill-box">
                                 <p>PHP</p>
