@@ -14,7 +14,7 @@ const HomePage = () => {
 
     return (
         <main id="home" className={`bg-[#FEFAEE] pt-2 ${isActive ? 'page active' : 'page'}`}>
-            <div className="mt-24 flex flex-col text-center items-center justify-center pl-20 pr-20 animate-fadeIn animation-delay-2 sm:py-20 md:pt-40 md:flex-row md:space-x-4 md:text-left">
+            <div className="mt-24 flex flex-col text-center items-center justify-center pl-20 pr-20 animate-fadeIn animation-delay-2 sm:py-20 md:flex-row md:space-x-4 md:text-left">
                 <div className="md:mt-2 md:mr-8">
                     <Image
                         src="/images/home_icon.jpg"
