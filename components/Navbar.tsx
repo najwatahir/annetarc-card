@@ -1,46 +1,51 @@
 "use client"
 
-import React, { useState } from "react"
-
-import { Link } from "react-scroll/modules"
-import { IoMdMenu, IoMdClose } from "react-icons/io"
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItem {
-    label: string
-    page: string
+    label: string;
+    page: string;
 }
 
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: "Home",
-        page: "home",
+        page: "/",
     },
     {
         label: "About",
-        page: "about",
+        page: "/about",
     },
     {
-        label: "Project",
-        page: "project",
+        label: "Blog",
+        page: "/blog",
     },
     {
         label: "Contact",
-        page: "contact",
+        page: "/contact",
     },
-]
+];
 
 export default function Navbar() {
-    const [navbar, setNavbar] = useState(false)
+    const [navbar, setNavbar] = useState(false);
     return (
         <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 bg-[#DAD7E3]">
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Link to="home">
-                            <div className="container flex items-center space-x-2">
-                                <img src="/images/catmeiw.png" className="w-10" alt="" />
-                                <h2 className="text-2xl font-bold text-[#1B1F2C]">NAJWA</h2>
-                            </div>
+                        <Link href="/home" className="container flex items-center space-x-2">
+                            <Image
+                                src="/images/catmeiw.png"
+                                alt="Logo"
+                                width={50}
+                                height={50}
+                            />
+                            <h2 className="text-2xl font-bold text-[#1B1F2C] pixelify">
+                                NAJWA
+                            </h2>
                         </Link>
                         <div className="md:hidden">
                             <button
@@ -63,25 +68,18 @@ export default function Navbar() {
                                 return (
                                     <Link
                                         key={idx}
-                                        to={item.page}
-                                        className={
-                                            "block lg:inline-block text-[#1B1F2C] font-semibold hover:text-[#485375] md:pl-3 md:pr-3 cursor-pointer scroll-pt-5"
-                                        }
-                                        activeClass="active"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-79}
-                                        duration={100}
-                                        onClick={() => setNavbar(!navbar)}
+                                        href={item.page}
+                                        className="block lg:inline-block text-[#1B1F2C] font-semibold hover:text-[#485375] md:pl-3 md:pr-3 cursor-pointer pixelify md:text-[16px] text-sm"
+                                        onClick={() => setNavbar(false)}
                                     >
                                         {item.label}
                                     </Link>
-                                )
+                                );
                             })}
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-    )
+    );
 }
