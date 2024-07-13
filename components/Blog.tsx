@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React, { useEffect, useState } from "react";
 import Footer from './Footer';
 
 const Blog = () => {
