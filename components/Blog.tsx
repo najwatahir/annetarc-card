@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 
-export default function Blog() {
+const Blog = () => {
 
     const [isActive, setIsActive] = useState(false);
 
@@ -20,3 +20,5 @@ export default function Blog() {
         </div>
     );
 }
+
+export default Blog
