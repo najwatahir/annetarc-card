@@ -35,8 +35,8 @@ function ContactForm() {
     }, []);
 
     return (
-        <main id="contact" className={`bg-[#FEFAEE] body-font flex flex-col min-h-screen relative mt-12  ${isActive ? 'page active' : 'page'}`}>
-            <div className="container flex-1 px-5 py-10 mx-auto sm:mt-20 mt-12">
+        <main id="contact" className={`bg-[#FEFAEE] body-font flex flex-col min-h-screen relative mt-4  ${isActive ? 'page active' : 'page'}`}>
+            <div className="container flex-1 px-5 py-10 mx-auto sm:mt-20 mt-8">
                 <div className="flex flex-col text-center w-full mb-12">
                     <h1 className="my-2 text-center font-bold text-2xl md:text-4xl text-[#1E1E1E] pixelify">
                         CONTACT
