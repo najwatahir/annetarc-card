@@ -112,6 +112,18 @@ const AboutPage = () => {
                                             alt=""
                                             width={50}
                                             height={50}
+                                            className="mr-2"
+                                        />
+                                        <p className="jetbrains mb:text-xl text-base">Animal Crossing</p>
+                                    </div>
+                                </div>
+                                <div className="skill-box">
+                                    <div className="flex items-center">
+                                        <Image
+                                            src="/images/purple-heart.png"
+                                            alt=""
+                                            width={50}
+                                            height={50}
                                             className="mr-4"
                                         />
                                         <p className="jetbrains mb:text-xl text-base">Marvel</p>
